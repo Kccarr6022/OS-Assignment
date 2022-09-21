@@ -76,12 +76,34 @@ being called is greater than the maximum memory size then the page size\
 can be increased to accomodate the range of words being called. This is not\
 possible with larger page sizes because the maximum memory size is fixed.\n\n"""
     print(text)
-    pass
 
 def partF(memorysize):
+    print("\n\nPART F: Memory size of 400 words\n\n")
     partA(memorysize)
     partB(memorysize)
     partC(memorysize)
+
+def partG():
+    print("\n\nPART G: Advantages of more memory\n\n")
+    text = """The advantages of more memory included less page faults and a higher capability to store\
+    more words in memory. This is because the more memory the more pages can be stored in memory."""
+    print(text)
+
+def partH():
+    print("\n\nPART H: Could this request list happen during the execution of a real program?\n\n")
+    text = """Yes, this request list could happen during the execution of a real program. This is because\
+the request list simulates an actual program that calls from memory. These processes occur frequently.\
+"""
+    print(text)
+
+def partI():
+    print("\n\nPART I: Would you expect the success rate of an actual program under similar conditions\
+to be higher or lower than the one in this problem?\n\n")
+    text = """Under similar conditions I expect the success rate to be identical to the ones simulated\
+in these algorithms"""
+    print(text)
+
+
 
 def main():
     print("FIFO page replacement algorithm\n\n")
@@ -92,6 +114,9 @@ def main():
     partD(memorysize = 200)
     partE()
     partF(memorysize = 400)
+    partG()
+    partH()
+    partI()
 
 
 
